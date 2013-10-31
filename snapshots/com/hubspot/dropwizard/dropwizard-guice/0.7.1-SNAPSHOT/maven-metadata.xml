@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.hubspot.dropwizard</groupId>
+  <artifactId>dropwizard-guice</artifactId>
+  <version>0.7.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20131031.143532</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20131031143532</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.7.1-20131031.143532-1</value>
+        <updated>20131031143532</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.7.1-20131031.143532-1</value>
+        <updated>20131031143532</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>0.7.1-20131031.143532-1</value>
+        <updated>20131031143532</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>0.7.1-20131031.143532-1</value>
+        <updated>20131031143532</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
