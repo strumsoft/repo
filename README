@@ -1,0 +1,32 @@
+>>>>>>>>
+
+		<distributionManagement>
+			<repository>
+				<id>release-repo</id>
+				<url>
+					https://github.com/strumsoft/repo/raw/master/releases
+				</url>
+			</repository>
+			<snapshotRepository>
+				<id>snapshot-repo</id>
+				<url>
+					https://github.com/strumsoft/repo/raw/master/snapshots
+				</url>
+			</snapshotRepository>
+		</distributionManagement>
+
+<<<<<<<<
+
+$ mvn -DaltDeploymentRepository=snapshot-repo::default::file://<abs-path> clean deploy
+
+snapshot-repo::default::file:.<path>
+
+It’s a three-part descriptor of sorts:
+
+1. snapshot-repo is the ID of the repository we’re defining, and can refer to one of the repositories specified in the <distributionManagement> section of the pom.xml.  This allows one to change a repository’s URL while retaining other <distributionManagement> configuration that might be set.
+
+2. default is the repository type; unless you’re monkeying with Maven 1-style repositories (hardly anyone is these days), this is required.
+
+3. file:<path> is the actual repository URL, and has to be relative to the root of your project, or absolute. No ~ here, etc.
+
+ref: http://cemerick.com/2010/08/24/hosting-maven-repos-on-github/
